@@ -7,7 +7,7 @@ the "Build a Portfolio" project.
 - The following files/folders included in this repository 
   - **index.html** - this is the main web page
   - **css/bootstrap.min.css** - *minified Bootstrap - required*
-  - **css/style/css** - *this file further customizes the Bootstrap styles*
+  - **css/style.css** - *this file further customizes the Bootstrap styles*
   - **js/bootstrap.min.js** - *minified Bootsrap JS file - required*
   - **images/** - directory where the screenshots are
 
