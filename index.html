@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Lato|Macondo+Swash+Caps" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Melissa Pott Portfolio Project</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="row">
+			<div class="col-md-2">
+				<div class="logo">MP</div>
+			</div>
+			<div class="col-md-10 text-right">
+				<h1>Melissa Pott</h1>
+				<h3>Full Stack Web Developer</h3>
+			</div>
+		</header>
+		<section class="row about">
+			<div class="col-md-12">
+				<p>This web page has been built for the Udacity Full Stack Web Developer Nanodegree project number 2: "Build a Portfolio Site." The grid based layout was implemented using the Bootstrap framework, which is also handling the responsive layout when scaling the page down by resizing the browser window from a desktop, or viewing the page on a mobile device.  In the event that this page is viewed 
+					from a high resolution device, a source set has been defined in the html which will cause a 2x resolution image to be displayed to a higher resolution device, while a 1x resolution image is displayed by default.</p>
+				<p>The logo in the upper left-hand corner, as opposed to being served as an image, is being displayed by using a cursive font from the Google Fonts api, and is encapsulated with a border styled
+					with varying corner radiuses in CSS which creates the leaf-shape surrounding the initials.</p>
+				<p>These are some projects that I have completed in the past.  Clicking on any of the projects below will launch a modal that will
+				give you more information about the project and a link to the website (where applicable) or the Github repository.</p>
+			</div>
+		</section>
+		<div class="row subhead">
+			<div class="col-md-12">
+				<h2>Featured Work</h2>
+			</div>
+		</div>
+		<section class="row projects">
+			<div class="col-md-4">
+				<img srcset="images/fresh-tomatoes-small.jpg 1x, images/fresh-tomatoes-large.jpg 2x"
+					src="images/fresh-tomatoes-small.jpg" data-toggle="modal" data-target="#fresh-tomatoes" alt="screenshot of fresh tomatoes website">
+				<h4 data-toggle="modal" data-target="#fresh-tomatoes">Fresh Tomatoes</h4>
+			</div>
+			<div class="col-md-4">
+				<img srcset="images/test-crimson-accord-small.jpg 1x, images/test-crimson-accord-large.jpg 2x"
+					src="images/test-crimson-accord-small.jpg" data-toggle="modal" data-target="#test-crimson-accord" alt="screenshot of crimson accord dev website">
+				<h4 data-toggle="modal" data-target="#test-crimson-accord">Test Crimson Accord</h4>
+			</div>
+			<div class="col-md-4">
+				<img srcset="images/crimson-accord-small.jpg 1x, images/crimson-accord-large.jpg 2x"
+					src="images/crimson-accord-small.jpg" data-toggle="modal" data-target="#crimson-accord" alt="screenshot of crimson accord website">
+				<h4 data-toggle="modal" data-target="#crimson-accord">Crimson Accord</h4>
+			</div>
+		</section>
+		<section class="row projects">
+			<div class="col-md-6">
+				<img srcset="images/live-green-small.jpg 1x, images/live-green-large.jpg 2x"
+					src="images/live-green-small.jpg" data-toggle="modal" data-target="#live-green" alt="screenshot of live better live green site">
+				<h4 data-toggle="modal" data-target="#live-green">Live Better Live Green</h4>
+			</div>
+			<div class="col-md-6">
+				<img srcset="images/arduino-bbq-small.jpg 1x, images/arduino-bbq-large.jpg 2x"
+					src="images/arduino-pig-tweeter-small.jpg" data-toggle="modal" data-target="#pig-tweeter" alt="picture of electrical diagram">
+				<h4 data-toggle="modal" data-target="#pig-tweeter">Pig Tweeter</h4>
+			</div>
+		</section>
+		<footer class="row">
+			<div class="col-sm-4">
+				<a href="mailto:melissa.pott@gmail.com?subject=portfolio">email</a>
+			</div>
+			<div class="col-sm-4">
+				<a href="https://github.com/melissapott">github</a>
+			</div>
+			<div class="col-sm-4">
+				<a href="https://www.linkedin.com/in/melissa-pott-37b11481">linked in</a>
+			</div>	
+		</footer>
+	<!-- Modal fresh-tomatoes-->
+		<div class="modal fade" id="fresh-tomatoes" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Fresh Tomatoes Movie Website</h4>
+					</div>
+					<div class="modal-body">
+						<p>The "Fresh Tomatoes" movie website was created as my first project submission for the
+							Udacity Full Stack Web Developer Nanodegree, and was an integral part of the "Python Fundamentals" course.
+							The exercise was intended to demonstrate the concept of Object Oriented Programming by creating
+							a 'movie' class with various properties such as title, release date, storyline, director, etc, and then 
+							re-using that class to create several movie instances.
+						</p>
+						<p>My project submission can be found on <a href="https://github.com/melissapott/FSND_Project_1">github</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Modal test-crimson-accord-->
+		<div class="modal fade" id="test-crimson-accord" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">New Crimson Accord - Development Site</h4>
+					</div>
+					<div class="modal-body">
+						<p>This site is currently in testing stage.  I built this site for a friend who runs a live action role playing 
+							(LARP) game.  These games involve a lot of paperwork, as each player will have a sheet for their stats, and 
+							multiple sheets of narratives between the player, the game's story-telling staff, and other characters in the
+							game.  My friend needed an easier way to manage accounting for and emailing all of these documents to each player.
+						</p>
+						<p>I created this site based on a Bootstrap Framework, built a MySQL database to hold the documents in blob format and
+							all the other related information required by his game model, and implemented PHP code to access the data.  The site
+							enables my friend and his staff to review and track documents received from players, then upload new documents for each 
+							player, as well as groups of related players, then email the documents out to all the players at once and post them
+							to be viewable by players on the website once logged in.
+						</p>
+						<p>This site is just now rolling out of testing, but the dev version is available at <a href="http://test.crimsonaccord.com">test.crimsonaccord.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Modal Crimson Accord-->
+		<div class="modal fade" id="crimson-accord" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Crimson Accord - Original</h4>
+					</div>
+					<div class="modal-body">
+						<p>Crimson Accord is a website that I created for my friend's LARP game.  I installed and configured Joomla and some extra modules
+							such as a lightbox gallery and extended user access permissions.  I also created the custom css templates.
+						</p>
+						<p>After using the site for a while, we learned that Joomla was fine for mass publishing a lot of content to a general audience, but in
+							his situation, he needed a few pages of content (each page user specific), available to each of the 60 or so players in the game, and 
+							also a way for the players to respond in a more controlled environment than general comments on a blog post.  Joomla just wasn't the 
+							right fit for doing that kind of thing, so I decided to make a purpose-built alternative, thus the Test Crimson Accord site was born.
+						</p>
+						<p>The Joomla! Crimson Accord site is viewable at <a href="http://crimsonaccord.com">crimsonaccord.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Modal Live Green-->
+		<div class="modal fade" id="live-green" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Live Better Live Green</h4>
+					</div>
+					<div class="modal-body">
+						<p>My friend Lisa Alexander was building a brand for herself as a guru of 'green living'.  She had hired a web developer to create a website
+						to showcase her video clips on TV talk shows and document her renovation of an old farm house into an energy efficient modern home.
+						</p>
+						<p>The person she hired set up a bare-bones Joomla! site and disappeared as soon as he got a paycheck (from what I was told), and I was asked
+							to step in and take over the project.  I reinstalled a current Joomla! version, set up the configuration, and designed and built the 
+							CSS templates.
+						</p>
+						<p>These days, Lisa has moved on from being an environmental guru to doing something with aligning people's chakras using tuning forks, 
+							but her Green site is still there at <a href="http://livebetterlivegreen.com">Live Better, Live Green</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Modal Pig Tweeter-->
+		<div class="modal fade" id="pig-tweeter" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Arduino BBQ Tweeter</h4>
+					</div>
+					<div class="modal-body">
+						<p>My husband has this fondness for hosting pig roasts in our back yard, which invoves weeks of prep digging a pit, lining it with cinder blocks
+							meticulously wrapped in aluminum foil and stacked just-so, but still, the pork was never cooked before the guests were all drunk and full from 
+							eating snacks.  Thus came the idea of automating the pig roast....
+						</p>
+						<p>My husband, being an engineer and very thrifty, re-purposed the motor of my treadmill to act as a rotisserie for the pig, and I, being a computer
+							nerd, repurposed some Arduino code designed for sending a Tweet from an Arduino equipped with a wifi shield and a Twitter token.  Then I bought a 
+							couple of cheap thermisters from Amazon, calibrated (loosly speaking) their resistance to a somewhat accurate temperature reading with resistors on 
+							a breadboard and coffee cups of hot and cold water, then coded it to the Arduino and soldered everything together.  The day of the pig roast, we just 
+							stuck the thermister probes in the appropriate places for loins or hams, and never needed to take the thing apart or stop the rotisserie...the temps 
+							were being sent as a twitter feed that we could just check on our phones.
+						</p>
+						<p>The Arduino code is <a href="https://github.com/melissapott/arduino_thermistor_tweet">here </a>(and I did borrow some)
+						</p>
+						<p>The Twitter feed from our pork dinner is <a href="https://twitter.com/thespinningpig">here</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
