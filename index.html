@@ -2,8 +2,10 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Lato|Macondo+Swash+Caps" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -24,59 +26,60 @@
 		<section class="row about">
 			<div class="col-md-12">
 				<p>This web page has been built for the Udacity Full Stack Web Developer Nanodegree project number 2: "Build a Portfolio Site." The grid based layout was implemented using the Bootstrap framework, which is also handling the responsive layout when scaling the page down by resizing the browser window from a desktop, or viewing the page on a mobile device.  In the event that this page is viewed 
-					from a high resolution device, a source set has been defined in the html which will cause a 2x resolution image to be displayed to a higher resolution device, while a 1x resolution image is displayed by default.</p>
+				from a high resolution device, a source set has been defined in the html which will cause a 2x resolution image to be displayed to a higher resolution device, while a 1x resolution image is displayed by default.</p>
 				<p>The logo in the upper left-hand corner, as opposed to being served as an image, is being displayed by using a cursive font from the Google Fonts api, and is encapsulated with a border styled
-					with varying corner radiuses in CSS which creates the leaf-shape surrounding the initials.</p>
+				with varying corner radiuses in CSS which creates the leaf-shape surrounding the initials.</p>
 				<p>These are some projects that I have completed in the past.  Clicking on any of the projects below will launch a modal that will
 				give you more information about the project and a link to the website (where applicable) or the Github repository.</p>
 			</div>
 		</section>
-		<div class="row subhead">
-			<div class="col-md-12">
+		<main class="row projects">
+			<div class="col-md-12 subhead">
 				<h2>Featured Work</h2>
 			</div>
-		</div>
-		<section class="row projects">
-			<div class="col-md-4">
-				<img srcset="images/fresh-tomatoes-small.jpg 1x, images/fresh-tomatoes-large.jpg 2x"
+			<article class="col-md-4 projects">
+				<img srcset="images/fresh-tomatoes-small.jpg 300w 1x, images/fresh-tomatoes-large.jpg 600w 2x"
+					sizes="(max-width: 300px) 100vw, (min-width: 301px) 50vw"
 					src="images/fresh-tomatoes-small.jpg" data-toggle="modal" data-target="#fresh-tomatoes" alt="screenshot of fresh tomatoes website">
 				<h4 data-toggle="modal" data-target="#fresh-tomatoes">Fresh Tomatoes</h4>
-			</div>
-			<div class="col-md-4">
-				<img srcset="images/test-crimson-accord-small.jpg 1x, images/test-crimson-accord-large.jpg 2x"
+			</article>
+			<article class="col-md-4 projects">
+				<img srcset="images/test-crimson-accord-small.jpg 300w 1x, images/test-crimson-accord-large.jpg 600w 2x"
+					sizes="(max-width: 300px) 100vw, (min-width: 301px) 50vw"
 					src="images/test-crimson-accord-small.jpg" data-toggle="modal" data-target="#test-crimson-accord" alt="screenshot of crimson accord dev website">
 				<h4 data-toggle="modal" data-target="#test-crimson-accord">Test Crimson Accord</h4>
-			</div>
-			<div class="col-md-4">
-				<img srcset="images/crimson-accord-small.jpg 1x, images/crimson-accord-large.jpg 2x"
+			</article>
+			<article class="col-md-4 projects">
+				<img srcset="images/crimson-accord-small.jpg 300w 1x, images/crimson-accord-large.jpg 600w 2x"
+					sizes="(max-width: 300px) 100vw, (min-width: 301px) 50vw"
 					src="images/crimson-accord-small.jpg" data-toggle="modal" data-target="#crimson-accord" alt="screenshot of crimson accord website">
 				<h4 data-toggle="modal" data-target="#crimson-accord">Crimson Accord</h4>
-			</div>
-		</section>
-		<section class="row projects">
-			<div class="col-md-6">
-				<img srcset="images/live-green-small.jpg 1x, images/live-green-large.jpg 2x"
+			</article>
+			<article class="col-md-6 projects">
+				<img srcset="images/live-green-small.jpg 300w 1x, images/live-green-large.jpg 600w 2x"
+					sizes="(max-width: 300px) 100vw, (min-width: 301px) 50vw"
 					src="images/live-green-small.jpg" data-toggle="modal" data-target="#live-green" alt="screenshot of live better live green site">
 				<h4 data-toggle="modal" data-target="#live-green">Live Better Live Green</h4>
-			</div>
-			<div class="col-md-6">
-				<img srcset="images/arduino-bbq-small.jpg 1x, images/arduino-bbq-large.jpg 2x"
-					src="images/arduino-pig-tweeter-small.jpg" data-toggle="modal" data-target="#pig-tweeter" alt="picture of electrical diagram">
+			</article>
+			<article class="col-md-6 projects">
+				<img srcset="images/arduino-bbq-small.jpg 300w 1x, images/arduino-bbq-large.jpg 600w 2x"
+					sizes="(max-width: 300px) 100vw, (min-width: 301px) 50vw"
+					src="images/arduino-bbq-small.jpg" data-toggle="modal" data-target="#pig-tweeter" alt="picture of electrical diagram">
 				<h4 data-toggle="modal" data-target="#pig-tweeter">Pig Tweeter</h4>
-			</div>
-		</section>
+			</article>
+		</main>
 		<footer class="row">
 			<div class="col-sm-4">
 				<a href="mailto:melissa.pott@gmail.com?subject=portfolio">email</a>
 			</div>
 			<div class="col-sm-4">
-				<a href="https://github.com/melissapott">github</a>
+				<a href="https://github.com/melissapott" target="_blank">github</a>
 			</div>
 			<div class="col-sm-4">
-				<a href="https://www.linkedin.com/in/melissa-pott-37b11481">linked in</a>
+				<a href="https://www.linkedin.com/in/melissa-pott-37b11481" target="_blank">linked in</a>
 			</div>	
 		</footer>
-	<!-- Modal fresh-tomatoes-->
+		<!-- Modal fresh-tomatoes-->
 		<div class="modal fade" id="fresh-tomatoes" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -90,13 +93,13 @@
 							a 'movie' class with various properties such as title, release date, storyline, director, etc, and then 
 							re-using that class to create several movie instances.
 						</p>
-						<p>My project submission can be found on <a href="https://github.com/melissapott/FSND_Project_1">github</a>
+						<p>My project submission can be found on <a href="https://github.com/melissapott/FSND_Project_1" target="_blank">github</a>
 						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- Modal test-crimson-accord-->
+					</div> <!-- ./modal-body -->
+				</div> <!-- ./modal-content -->
+			</div> <!-- ./modal-dialog -->
+		</div> <!-- ./modal -->
+		<!-- Modal test-crimson-accord-->
 		<div class="modal fade" id="test-crimson-accord" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -115,13 +118,13 @@
 							player, as well as groups of related players, then email the documents out to all the players at once and post them
 							to be viewable by players on the website once logged in.
 						</p>
-						<p>This site is just now rolling out of testing, but the dev version is available at <a href="http://test.crimsonaccord.com">test.crimsonaccord.com</a>
+						<p>This site is just now rolling out of testing, but the dev version is available at <a href="http://test.crimsonaccord.com" target="_blank">test.crimsonaccord.com</a>
 						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- Modal Crimson Accord-->
+					</div> <!-- ./modal-body -->
+				</div> <!-- ./modal-content -->
+			</div> <!-- ./modal-dialog -->
+		</div> <!-- ./modal -->
+		<!-- Modal Crimson Accord-->
 		<div class="modal fade" id="crimson-accord" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -137,13 +140,13 @@
 							also a way for the players to respond in a more controlled environment than general comments on a blog post.  Joomla just wasn't the 
 							right fit for doing that kind of thing, so I decided to make a purpose-built alternative, thus the Test Crimson Accord site was born.
 						</p>
-						<p>The Joomla! Crimson Accord site is viewable at <a href="http://crimsonaccord.com">crimsonaccord.com</a>
+						<p>The Joomla! Crimson Accord site is viewable at <a href="http://crimsonaccord.com" target="_blank">crimsonaccord.com</a>
 						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- Modal Live Green-->
+					</div> <!-- ./modal-body -->
+				</div> <!-- ./modal-content -->
+			</div> <!-- ./modal-dialog -->
+		</div> <!-- ./modal -->
+		<!-- Modal Live Green-->
 		<div class="modal fade" id="live-green" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -159,13 +162,13 @@
 							CSS templates.
 						</p>
 						<p>These days, Lisa has moved on from being an environmental guru to doing something with aligning people's chakras using tuning forks, 
-							but her Green site is still there at <a href="http://livebetterlivegreen.com">Live Better, Live Green</a>
+							but her Green site is still there at <a href="http://livebetterlivegreen.com" target="_blank">Live Better, Live Green</a>
 						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- Modal Pig Tweeter-->
+					</div> <!-- ./modal-body -->
+				</div> <!-- ./modal-content -->
+			</div> <!-- ./modal-dialog -->
+		</div> <!-- ./modal -->
+		<!-- Modal Pig Tweeter-->
 		<div class="modal fade" id="pig-tweeter" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -184,13 +187,13 @@
 							stuck the thermister probes in the appropriate places for loins or hams, and never needed to take the thing apart or stop the rotisserie...the temps 
 							were being sent as a twitter feed that we could just check on our phones.
 						</p>
-						<p>The Arduino code is <a href="https://github.com/melissapott/arduino_thermistor_tweet">here </a>(and I did borrow some)
+						<p>The Arduino code is <a href="https://github.com/melissapott/arduino_thermistor_tweet" target="_blank">here </a>(and I did borrow some)
 						</p>
-						<p>The Twitter feed from our pork dinner is <a href="https://twitter.com/thespinningpig">here</a>
+						<p>The Twitter feed from our pork dinner is <a href="https://twitter.com/thespinningpig" target="_blank">here</a>
 						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+					</div> <!-- /.modal-body -->
+				</div> <!-- /.modal-content -->
+			</div> <!-- /.modal-dialog -->
+		</div> <!-- /.modal -->
+	</div> <!-- /.container -->
 </body>
